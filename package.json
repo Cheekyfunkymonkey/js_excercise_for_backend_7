@@ -1,0 +1,29 @@
+{
+  "name": "js_excercise_for_backend_7",
+  "version": "1.0.0",
+  "description": "このレポジトリは[Web白熱教室](https://tsuyopon.xyz/)の[JavaScriptの学習コンテンツ > JavaScriptバックエンド編](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/)にある「[【エクササイズ】掲示板APIを実装する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/js-excercise-for-backend-7/)」で利用するものです。",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cheekyfunkymonkey/js_excercise_for_backend_7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cheekyfunkymonkey/js_excercise_for_backend_7/issues"
+  },
+  "homepage": "https://github.com/Cheekyfunkymonkey/js_excercise_for_backend_7#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "power-assert": "^1.6.1",
+    "supertest": "^4.0.2"
+  }
+}
