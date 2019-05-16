@@ -15,5 +15,18 @@ class Comment {
     }
 }
 
+// ダミーDBにデータを追加する
+for(let i = 0; i < 5; i++) {
+    const comment = new Comment ({
+        username : "ユーザー" + i,
+        body : "コメント" + i 
+    })
+    comments.push(comment)
+}
+
 // CRUD機能
-module.exports = {};
+module.exports = {
+    findAll : () => {
+        return comments;
+    }
+};
