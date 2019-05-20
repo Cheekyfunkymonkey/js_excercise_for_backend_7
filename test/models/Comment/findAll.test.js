@@ -11,7 +11,7 @@ describe("Comment.findAll", () => {
     assert.equal(Array.isArray(comments), true);
     assert.equal(comments.length > 0, true);
     comments.forEach(comment => {
-      assert.deepStrictEqual(comment, {
+      assert.deepStrictEqual(Object.assign({}, comment), {
         id: comment.id,
         username: comment.username,
         body: comment.body,
