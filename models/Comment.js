@@ -6,27 +6,27 @@ let nextID = 1;
 
 // ダミーDBに格納する１件ごとのデータ構造
 class Comment {
-    constructor({username, body}) {
-        this.id = nextID++;
-        this.username = username;
-        this.body = body;
-        this.createdAt = new Date();
-        this.updatedAt = new Date();
-    }
+  constructor({ username, body }) {
+    this.id = nextID++;
+    this.username = username;
+    this.body = body;
+    this.createdAt = new Date();
+    this.updatedAt = new Date();
+  }
 }
 
 // ダミーDBにデータを追加する
-for(let i = 0; i < 5; i++) {
-    const comment = new Comment ({
-        username : "ユーザー" + i,
-        body : "コメント" + i 
-    })
-    comments.push(comment)
+for (let i = 0; i < 5; i++) {
+  const comment = new Comment({
+    username: "ユーザー" + i,
+    body: "コメント" + i
+  });
+  comments.push(comment);
 }
 
 // CRUD機能
 module.exports = {
-    findAll : () => {
-        return comments;
-    }
+  findAll: () => {
+    return comments.slice();
+  }
 };
