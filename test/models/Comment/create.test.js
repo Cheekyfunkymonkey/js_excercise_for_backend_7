@@ -7,7 +7,7 @@ describe("Comment.create", () => {
   });
 
   it("メソッド実行時に引数のオブジェクトにusernameプロパティがないとエラーになる", () => {
-    dataList = [{}, { body: "コメント" }];
+    const dataList = [{}, { body: "コメント" }];
     dataList.forEach(data => {
       try {
         Comment.create(data);
