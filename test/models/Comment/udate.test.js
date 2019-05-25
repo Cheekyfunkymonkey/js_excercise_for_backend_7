@@ -30,6 +30,7 @@ describe("Comment.update", () => {
   it("メソッド実行時に引数のオブジェクトにusernameプロパティがないとエラーになる", () => {
     try {
       Comment.update({ id: 1, body: "コメント" });
+      assert.fail();
     } catch (error) {
       assert.equal(error.message, "ユーザー名は必須です");
     }
