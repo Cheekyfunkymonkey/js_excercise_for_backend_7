@@ -4,7 +4,7 @@
   "description": "このレポジトリは[Web白熱教室](https://tsuyopon.xyz/)の[JavaScriptの学習コンテンツ > JavaScriptバックエンド編](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/)にある「[【エクササイズ】掲示板APIを実装する](https://tsuyopon.xyz/learning-contents/web-dev/javascript/backend/js-excercise-for-backend-7/)」で利用するものです。",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon index.js",
     "test": "mocha"
   },
   "repository": {
