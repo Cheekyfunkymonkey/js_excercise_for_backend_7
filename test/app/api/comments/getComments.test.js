@@ -1,14 +1,13 @@
-const request = require("supertest");
 const assert = require("power-assert");
-const app = require("../../../../app");
+const requestHelper = require("../../../helper/requestHelper");
 
 describe("test GET /api/comments", () => {
   it("return comments in response.body", async () => {
-    const response = await request(app)
-      .get("/api/comments")
-      .set("Accept", "application/json")
-      .expect("Content-Type", /application\/json/)
-      .expect(200);
+    const response = await requestHelper.request({
+      method: "get",
+      endPoint: "/api/comments",
+      statusCode: 200
+    });
 
     const comments = response.body;
     assert.equal(Array.isArray(comments), true);
